@@ -19,6 +19,8 @@ add_image_size('pagina-principal', 173, 293, true);
 add_image_size('pagina-noticias', 400, 280, true);
 add_image_size('pagina-noticia', 550, 340, true);
 add_image_size('propagandas-laterais', 195, 235, true);
+add_image_size('propaganda-topo', 569, 100, true);
+add_image_size('destaque-carousel', 620, 355);
 
 function reporterdenoticias_paginacao_pagina_noticias() {
     global $wp_rewrite, $wp_query;

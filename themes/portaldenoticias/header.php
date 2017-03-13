@@ -80,11 +80,13 @@
 
             <div class="row logo">
                 <div class="col-md-6">
-                    <div class="logotipo">
-                    </div>
+                    <a href="<?php bloginfo('wpurl'); ?>">
+                        <div class="logotipo">
+                        </div>
+                    </a>
                 </div>
                 <div class="col-md-5 propaganda-topo">
-
+                    <?php get_template_part('partes/propaganda', 'topo'); ?>
                 </div>
             </div>
 

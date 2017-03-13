@@ -237,6 +237,31 @@ footer {
     margin: 50px 0 0 0;
 }
 
+.carousel-caption{
+    background-color: #000;
+    padding-top: 0px;
+    right: 0;
+    left: 0;
+    filter:alpha(opacity=80);
+    opacity: 0.8;
+    -moz-opacity:0.8;
+    -webkit-opacity:0.8;
+    -ms-opacity:0.8;
+    -o-pacity:0.8;
+}
+
+.carousel-caption>a:hover, .carousel-caption>a:active, .carousel-caption>a{
+    font-family: Arial;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.item{
+    min-height: 355px;
+    min-width: 620px;
+}
+
 /**
     Estilos da página simples
 **/
