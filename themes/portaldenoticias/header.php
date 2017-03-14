@@ -67,6 +67,7 @@
                             </a>
                         </li>
                     </ul>
+                    <?php get_search_form();  ?>
                 </div>
                 <!-- /.navbar-collapse -->
             </div>

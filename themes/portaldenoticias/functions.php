@@ -59,7 +59,7 @@ add_theme_support('menus');
 function reporterdenoticias_wp_query($params = null) {
     
     $args = array(
-        'posts_per_page' => $params['posts_per_page'],
+        'posts_per_page' => isset($params['posts_per_page']) ? $params['posts_per_page'] : '',
         'paged' => get_query_var('page'),
         'post_type' => isset($params['post_type']) ? $params['post_type'] : 'post',
         'category_name' => isset($params['category_name']) ? $params['category_name'] : '',

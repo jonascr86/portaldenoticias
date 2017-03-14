@@ -76,22 +76,12 @@ div .logotipo{
 }
 
 .propaganda-topo{
-    background-color: darkgray;
     height: 100px;
     width: 569px;
     margin-top: 60px;
 }
 
-.propaganda-noticias{
-    float:right;
-    background-color: darkgray;
-    height: 235px;
-    width: 195px;
-    margin-bottom: 60px;
-}
-
 .propaganda{
-    background-color: darkgray;
     height: 235px;
     width: 195px;
     margin-bottom: 60px;

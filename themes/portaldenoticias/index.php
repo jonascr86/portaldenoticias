@@ -9,30 +9,7 @@
 
     </div>
     <!--<div class="row">-->
-    <div class="col-md-2">
-        <div class="espaco">
-
-        </div>
-    </div>
-
-    <div class="col-md-2">
-        <div class="propaganda">
-
-        </div>
-    </div>
-
-    <div class="col-md-2">
-        <div class="propaganda">
-
-        </div>
-    </div>
-
-    <div class="col-md-2">
-        <div class="propaganda">
-
-        </div>
-    </div>
-
+    <?php get_template_part('partes/propagandas', 'laterais')?>
     <!--</div>-->
 
     <?php get_footer() ?>
