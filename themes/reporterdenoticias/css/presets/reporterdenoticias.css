@@ -1,0 +1,38 @@
+/*
+Adição e dimencionamento do logo
+*/
+div #logo{
+    width:150px;
+    height:135px;
+    background-image: url(../../img/logo.png);
+    background-size:100% 100%;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -khtml-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+}
+
+/*
+Mudando as cores do menu
+*/
+.megamenu-parent li>a {
+    color: #1c84c7;
+}
+
+/*
+ Resumo da notícia na página simples
+*/
+div.resumo-noticia{
+    border-top: solid 1px #e9eaed;
+    padding: 25px 0 0 0;
+}
+
+div.resumo-noticia>p{
+    text-align: center;
+    color: #a9a9a9;
+}
+
+/*Conteúdo do texto, página simples*/
+.entry-summary p {
+    margin-top: 20px;
+}
