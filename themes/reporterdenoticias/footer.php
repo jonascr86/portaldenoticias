@@ -95,56 +95,10 @@
 <div class="offcanvas-menu visible-sm visible-xs">
     <a href="#" class="close-offcanvas"><i class="fa fa-remove"></i></a>
     <div class="offcanvas-inner">
-        <h3 class="title">Search</h3>
-        <div class="search">
-            <form action="#" method="post">
-                <input name="searchword" maxlength="200" class="inputbox search-query" type="text" placeholder="Search ...">
-            </form>
-        </div>
         <ul>
-            <li>
-                <a href="index.html">Home</a>
-                <span role="button" class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-01" aria-expanded="false" aria-controls="collapse-menu-01"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
-                <ul class="collapse" id="collapse-menu-01" aria-expanded="false">
-                    <li><a href="index2.html">Home 2</a></li>
-                </ul>
-            </li>
-            <li><a href="article-categories.html">Social Media</a></li>
-            <li><a href="article-categories.html">Tech</a></li>
-            <li>
-                <a href="article-categories.html">Pages</a>
-                <span role="button" class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-02" aria-expanded="false" aria-controls="collapse-menu-02"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
-                <ul class="collapse" id="collapse-menu-02" aria-expanded="false">
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="advertisement.html">Advertisement</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="comingsoon.html">Coming Soon</a></li>
-                    <li><a href="404.html">404 Page</a></li>
-                    <li>
-                        <a href="javascript:void(0)">Parent</a>
-                        <span role="button" class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-03" aria-expanded="false" aria-controls="collapse-menu-03"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
-                        <ul class="collapse" id="collapse-menu-03" aria-expanded="false">
-                            <li><a href="javascript:void(0)">Sub Child 01</a></li>
-                            <li><a href="javascript:void(0)">Sub Child 02</a></li>
-                            <li><a href="javascript:void(0)">Sub Child 03</a></li>
-                            <li>
-                                <a href="javascript:void(0)">Parent</a>
-                                <span role="button" class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-04" aria-expanded="false" aria-controls="collapse-menu-04"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
-                                <ul class="collapse" id="collapse-menu-04" aria-expanded="false">
-                                    <li><a href="javascript:void(0)">Sub Child 01</a></li>
-                                    <li><a href="javascript:void(0)">Sub Child 02</a></li>
-                                    <li><a href="javascript:void(0)">Sub Child 03</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="article-categories.html">Business</a></li>
-            <li><a href="article-categories.html">Fashion</a></li>
-            <li><a href="article-categories.html">Video</a></li>
-            <li><a href="article-categories.html">Leadership</a></li>
-            <li><a href="article-categories.html">Explore</a></li>
+            <?php
+                    getMenu();
+            ?>
         </ul>
     </div>
 </div>

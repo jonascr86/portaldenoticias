@@ -36,3 +36,26 @@ div.resumo-noticia>p{
 .entry-summary p {
     margin-top: 20px;
 }
+
+img {
+max-width:100%;
+height: auto;
+}
+
+
+/*Estilos para a nova versão do wol-slide*/
+.owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next,
+  .owl-carousel .owl-dot {
+    font-family: 'fontAwesome';
+    display: inline-block;
+
+}
+.owl-carousel .owl-nav .owl-prev:before{
+    content: "\f053";
+    margin-right:10px;
+}
+.owl-carousel .owl-nav .owl-next:after{
+    content: "\f054";
+    margin-right:10px;
+}

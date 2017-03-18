@@ -49,7 +49,13 @@ jQuery(function($) {
     //article-slider
     $('#article-slider').owlCarousel({
     	loop:true,
-    	responsive:{
+        autoplay:true,
+        nav:true,
+        
+        navText : ["",""],
+        rewindNav : true,
+
+        responsive:{
     		0:{
     			items:1
     		},

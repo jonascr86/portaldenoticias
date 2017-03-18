@@ -9,86 +9,13 @@
                 <!-- Latest News -->
                 <div class="newedge-latest-news">
                     <div class="section-title">
-                        <h3> <span class="cat-icon"><i class="fa fa-bell-o"></i></span>Latest News</h3>
+                        <h3> <span class="cat-icon"><i class="fa fa-bell-o"></i></span>Destaques</h3>
                     </div> <!-- //section-title -->
 
                     <div class="row">
                         <div class="col-md-8">
                             <!-- article-slider -->
-                            <div id="article-slider" class="owl-carousel">
-                                <article class="item leading-item gradient-major">
-                                    <div class="article-inner">
-                                        <div class="overlay"></div>
-                                        <div class="img-wrapper"><img class="img-100p latest-post-image" src="<?php echo get_template_directory_uri(); ?>/img/article-img/medium10.jpg" alt="img"></div>
-                                        <div class="post-share-social">
-                                            <a href="#" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-google-plus"></a>
-                                            <a href="#" class="fa fa-pinterest"></a>
-                                            <a href="#" class="fa fa-linkedin"></a>
-                                            <div class="share-icon"><i class="fa fa-share-alt"></i></div>
-                                        </div> <!-- //post-share-social -->
-                                        <div class="article-info">
-                                            <p class="slide-cat">
-                                                <a href="article-categories.html">
-                                                    <span class="cat-icon cat-icon-color01"> E</span>Explore
-                                                </a>
-                                            </p>
-                                            <h4 class="entry-title">
-                                                <a href="single-article.html">Proin suscipit luctus orci placerat fringilla</a>
-                                            </h4>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="item leading-item gradient-major">
-                                    <div class="article-inner">
-                                        <div class="overlay"></div>
-                                        <div class="img-wrapper"><img class="img-100p latest-post-image" src="<?php echo get_template_directory_uri(); ?>/img/article-img/medium11.jpg" alt="img"></div>
-                                        <div class="post-share-social">
-                                            <a href="#" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-google-plus"></a>
-                                            <a href="#" class="fa fa-pinterest"></a>
-                                            <a href="#" class="fa fa-linkedin"></a>
-                                            <div class="share-icon"><i class="fa fa-share-alt"></i></div>
-                                        </div> <!-- //post-share-social -->
-                                        <div class="article-info">
-                                            <p class="slide-cat">
-                                                <a href="article-categories.html">
-                                                    <span class="cat-icon cat-icon-color02"> L</span>LEADERSHIP
-                                                </a>
-                                            </p>
-                                            <h4 class="entry-title">
-                                                <a href="single-article.html">Proin suscipit luctus orci placerat fringilla</a>
-                                            </h4>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="item leading-item gradient-major">
-                                    <div class="article-inner">
-                                        <div class="overlay"></div>
-                                        <div class="img-wrapper"><img class="img-100p latest-post-image" src="<?php echo get_template_directory_uri(); ?>/img/article-img/medium12.jpg" alt="img"></div>
-                                        <div class="post-share-social">
-                                            <a href="#" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-google-plus"></a>
-                                            <a href="#" class="fa fa-pinterest"></a>
-                                            <a href="#" class="fa fa-linkedin"></a>
-                                            <div class="share-icon"><i class="fa fa-share-alt"></i></div>
-                                        </div> <!-- //post-share-social -->
-                                        <div class="article-info">
-                                            <p class="slide-cat">
-                                                <a href="article-categories.html">
-                                                    <span class="cat-icon cat-icon-color03"> V</span>VIDEO
-                                                </a>
-                                            </p>
-                                            <h4 class="entry-title">
-                                                <a href="single-article.html">Vestibulum eget felis nec purus commodo convallis</a>
-                                            </h4>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div> <!-- //article-slider -->
+                            <?php get_template_part('partes/loop', 'slide_index'); ?>
                         </div> <!-- //col-md-8 -->
 
                         <div class="col-md-4 col-sm-6">

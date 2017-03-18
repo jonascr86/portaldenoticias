@@ -39,7 +39,7 @@ function reporterdenoticias_enqueue_scripts() {
 add_theme_support('post-thumbnails');
 add_theme_support('menus');
 
-add_image_size('pagina-principal', 173, 293, true);
+//add_image_size('destacada-default', 263, 253, true);
 add_image_size('pagina-noticias', 400, 280, true);
 add_image_size('pagina-noticia', 550, 340, true);
 add_image_size('propagandas-laterais', 195, 235, true);
@@ -90,6 +90,7 @@ function reporterdenoticias_wp_query($params = null) {
         'orderby' => isset($params['orderby']) ? $params['orderby'] : 'date',
         'order' => isset($params['order']) ? $params['order'] : 'DESC',
         'tag_not_in' => isset($params['tag_not_in']) ? $params['tag_not_in'] : [],
+        'offset' => isset($params['offset']) ? $params['offset'] : '',
     );
 
     $wp_query = new WP_Query($args);
@@ -129,7 +130,7 @@ function obterPrimeiraLetra($string) {
     if (strlen($return) === 0) {
         $return = strtoupper(substr($string, 0, ($param + 1)));
     }
-    
+
     return $return;
 }
 
@@ -181,4 +182,54 @@ function get_the_termos($post, $taxonomy) {
         return false;
 
     return tratarTermos($terms);
+}
+
+function obterCatUrl() {
+    $categoria = "";
+    $array = array_values(array_filter(explode('/', $_SERVER ['REQUEST_URI'])));
+    $tamanho = count($array) - 1;
+    if (isset($array[$tamanho]))
+        $categoria = $array[$tamanho];
+
+    return $categoria;
+}
+
+function corrigeCategoria($cat) {
+    $categoria = "";
+
+    switch ($cat) {
+        case 'politica':
+            $categoria = 'Política';
+            break;
+        case 'policia':
+            $categoria = 'Polícia';
+            break;
+        case 'noticias':
+            $categoria = 'Notícias';
+            break;
+    }
+
+    if (strlen($categoria) == 0) {
+        $categoria = ucfirst($cat);
+    }
+
+    return $categoria;
+}
+
+function obtercategoriaUrl() {
+    $categoria = obterCatUrl();
+    return corrigeCategoria($categoria);
+}
+
+function getMenu() {
+    return wp_nav_menu(
+            [
+                'theme-location' => 'menu',
+                'container' => '',
+                'container_id' => '',
+                'container_class' => '',
+                'menu_class' => 'list-inline megamenu-parent',
+                'walker' => new PortalDeNoticiasBootstrapNavWalker(),
+            ]
+    );
 }

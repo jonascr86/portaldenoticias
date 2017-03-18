@@ -3,8 +3,8 @@
     <div class="container">
         <div class="row">
             <div class="visible-sm visible-xs col-sm-12">
-                <div class="mobile-logo pull-left">
-                    <a href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/img/logo2.png" alt="logo"></a>
+                <div id="logo" class="mobile-logo pull-left">
+                    <a href="index.html"></a>
                 </div>
                 <a id="offcanvas-toggler" class="pull-right" href="#"><i class="fa fa-bars"></i></a>
             </div>
@@ -19,16 +19,7 @@
             <div class="col-sm-12">
                 <ul class="list-inline megamenu-parent">
                     <?php
-                    wp_nav_menu(
-                            [
-                                'theme-location' => 'menu',
-                                'container' => '',
-                                'container_id' => '',
-                                'container_class' => '',
-                                'menu_class' => 'list-inline megamenu-parent',
-                                'walker' => new PortalDeNoticiasBootstrapNavWalker(),
-                            ]
-                    )
+                        getMenu();
                     ?>
                 </ul>
             </div> <!-- col-sm-12 -->

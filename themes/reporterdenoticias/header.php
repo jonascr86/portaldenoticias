@@ -38,7 +38,7 @@
                     <div class="container">
                         <div class="row">
                             <div id="logo" class="col-xs-4 col-sm-3 col-md-3 hidden-sm hidden-xs">
-                                <!--<a href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="logo"></a>-->
+                                <!--<a href="index.html"><img src="<?php // echo get_template_directory_uri(); ?>/img/logo.png" alt="logo"></a>-->
                             </div> <!-- //logo -->
                             <div class="col-sm-12 col-md-9">
                                 <div class="top-right">

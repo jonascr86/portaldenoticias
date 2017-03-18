@@ -1,16 +1,16 @@
 <?php
 $params = [
-    'category_name' => 'destaques',
-    'posts_per_page' => '4',
+    'category_name' => 'destaque',
+    'posts_per_page' => '3',
 ];
 
-$propagandas = reporterdenoticias_wp_query($params);
+$destaques = reporterdenoticias_wp_query($params);
 $n = 1;
 ?>
 
 <div class="row">
-    <div class="col-md-10">
-        <?php if ($propagandas->have_posts()) : ?>
+    <div class="col-md-8">
+        <?php if ($destaques->have_posts()) : ?>
             <div class="row carousel-holder"> 
 
                 <div class="col-md-8">
@@ -22,7 +22,7 @@ $n = 1;
                             <li data-target="#carousel-example-generic" data-slide-to="3" class=""></li>
                         </ol>
                         <div class="carousel-inner">
-                                <?php while ($propagandas->have_posts()) : $propagandas->the_post() ?>
+                                <?php while ($destaques->have_posts()) : $destaques->the_post() ?>
                                     <div class="item <?php if($n == 1){ echo "active";} ?>">
                                         <a href="<?php the_permalink(); ?>">
                                             <?php the_post_thumbnail('destaque-carousel'); ?>
@@ -44,7 +44,6 @@ $n = 1;
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4" style="background-color: #000">
                     
                 </div>
                 
