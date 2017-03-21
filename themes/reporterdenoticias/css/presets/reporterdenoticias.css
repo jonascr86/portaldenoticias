@@ -38,15 +38,20 @@ div.resumo-noticia>p{
 }
 
 img {
-max-width:100%;
-height: auto;
+    /*max-width:100%; Imagens dos vídeos pararma de aparecer*/
+    width: auto;
+    height: auto;
+}
+
+div.noticia>img {
+    max-height: 253px;
 }
 
 
 /*Estilos para a nova versão do wol-slide*/
 .owl-carousel .owl-nav .owl-prev,
-  .owl-carousel .owl-nav .owl-next,
-  .owl-carousel .owl-dot {
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-dot {
     font-family: 'fontAwesome';
     display: inline-block;
 
