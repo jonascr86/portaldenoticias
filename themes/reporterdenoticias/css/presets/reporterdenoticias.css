@@ -43,6 +43,12 @@ img {
     height: auto;
 }
 
+.media-left img{
+    /*max-width:100%; Imagens dos vídeos pararma de aparecer*/
+    width: 130px;
+    height: auto;
+}
+
 div.noticia>img {
     max-height: 253px;
 }

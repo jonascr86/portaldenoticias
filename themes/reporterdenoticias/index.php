@@ -24,12 +24,14 @@
 
                 <!-- Sports Category -->
                 <?php get_template_part('partes/loop', 'esportes_principal'); ?>
-                
+
                 <?php get_template_part('partes/loop', 'regionais_principal'); ?>
-                
+
                 <?php get_template_part('partes/loop', 'politica_principal'); ?>
-                
+
                 <?php get_template_part('partes/loop', 'policia_principal'); ?>
+
+                <?php get_template_part('partes/loop', 'videos_principal'); ?>
 
                 <!-- Advertisement one -->
                 <div class="advertisement mtb30">
