@@ -15,15 +15,18 @@
                 </div> <!-- //bottom1 -->
 
                 <div id="bottom2" class="col-sm-6 col-md-3">
-                    <div>
+                    <div class="menu-rodape">
                         <h3 class="title">Acesse</h3>
-                        <?php getMenu(); ?>
+                        <?php
+                            $params = ['menu_class' => 'megamenu-parent', 'theme-location' => 'rodape', 'menu' => 'Menu Rodapé'];
+                            getMenu($params);
+                        ?>
                     </div>
                 </div> <!-- //bottom2 -->
 
                 <div id="bottom4" class="col-sm-6 col-md-3">
                     <div class="social-wrapper">
-                        <h3 class="title">Social Link</h3>
+                        <h3 class="title">Redes Sociais</h3>
                         <ul class="social-icons">
                             <li><a target="_blank" href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
                         </ul>
@@ -47,10 +50,7 @@
     <a href="#" class="close-offcanvas"><i class="fa fa-remove"></i></a>
     <div class="offcanvas-inner">
         <ul>
-            <?php
-                $params = ['menu_class' => 'megamenu-parent', 'theme-location' => 'rodape', 'menu' => 'Menu Rodapé'];
-                getMenu($params);
-            ?>
+            
         </ul>
     </div>
 </div>
