@@ -8,7 +8,7 @@
         <div class="overlay"></div>
         <?php if (has_post_thumbnail()) : ?>
             <div class="img-wrapper">
-                <?php the_post_thumbnail(); ?>
+                <?php the_post_thumbnail('noticia-slide_image'); ?>
             </div>
         <?php else : ?>
             <div class="img-wrapper">

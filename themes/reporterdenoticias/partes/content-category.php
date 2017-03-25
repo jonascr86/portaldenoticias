@@ -3,14 +3,18 @@
     <article class="gradient-color04">
         <div class="article-inner">
             <div class="overlay"></div>
-            <?php if(has_post_thumbnail()) : ?>
-            <div class="img-wrapper">
-                <?php the_post_thumbnail(); ?>
-            </div>
-            <?php else : ?>
-            <div class="img-wrapper">
-                <img class="img-100p latest-post-image" src="<?php echo get_template_directory_uri(); ?>/img/article-img/thumbnail01.jpg" alt="img">
-            </div>
+            <?php if(has_video_thumbnail()) : ?>
+                <div class="img-wrapper noticia">
+                    <img src="<?php video_thumbnail();?>" alt="img">
+                </div>
+                <?php elseif (has_post_thumbnail()) :  ?>
+                    <div class="img-wrapper noticia">
+                        <?php the_post_thumbnail(); ?>
+                    </div>    
+                    <?php else : ?>
+                        <div class="img-wrapper noticia">
+                            <img class="img-100p latest-post-image" src="<?php echo get_template_directory_uri(); ?>/img/article-img/thumbnail01.jpg" alt="img">
+                        </div>
             <?php endif; ?>
             <div class="article-info">
                 <h4 class="entry-title">

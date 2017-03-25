@@ -608,4 +608,13 @@ function video_thumbnail( $post_id = null ) {
 	else { echo $video_thumbnail; }
 }
 
+function has_video_thumbnail($post_id = null)
+{
+    $has = TRUE;
+    if ( ( $video_thumbnail = get_video_thumbnail( $post_id ) ) == null )
+            $has = FALSE;
+    
+    return $has;
+}   
+
 ?>

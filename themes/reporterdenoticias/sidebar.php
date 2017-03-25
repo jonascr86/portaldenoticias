@@ -1,24 +1,9 @@
 <div class="col-sm-3">
-    <!-- popular-news -->
-    <div class="popular-news">
-        <div class="section-title">
-            <h3> <span class="cat-icon"><i class="fa fa-pencil"></i></span>Popular News</h3>
-        </div> <!-- //section-title -->
-
-        <ul class="popular-news-list">
-            <li><a href="single-article.html">The polls that prove caste politics still matter in India</a></li>
-            <li><a href="single-article.html">Sed ac neque ut neque dictum accumsan</a></li>
-            <li><a href="single-article.html">5 Effective Email Unsubscribe Pages condimentum Donec</a></li>
-            <li><a href="single-article.html">In aliquet facilisis condimentum Donec at orci orci</a></li>
-            <li><a href="single-article.html">Integer elementum massa at nulla condimentum Donec</a></li>
-        </ul>
-    </div> <!-- //popular-news -->
-
     <!-- Advertisement sidebar 01 -->
     <div class="advertisement mtb30 mtt30">
         <div class="row">
-            <div class="col-sm-12">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/right-ad1.jpg" class="img-100p" alt="advertisement">
+            <div class="col-sm-12 propaganda-">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/teste.jpg" class="img-100p" alt="advertisement">
             </div>
         </div>
     </div> <!-- //Advertisement sidebar 01-->

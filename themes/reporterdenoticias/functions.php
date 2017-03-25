@@ -39,12 +39,16 @@ function reporterdenoticias_enqueue_scripts() {
 add_theme_support('post-thumbnails');
 add_theme_support('menus');
 
-//add_image_size('destacada-default', 263, 253, true);
-add_image_size('pagina-noticias', 400, 280, true);
-add_image_size('pagina-noticia', 550, 340, true);
-add_image_size('propagandas-laterais', 195, 235, true);
-add_image_size('propaganda-topo', 569, 100, true);
-add_image_size('destaque-carousel', 620, 355);
+add_action('after_setup_theme', 'wpdocs_theme_setup');
+
+function wpdocs_theme_setup() {
+    add_image_size('noticia-thumbnail', 263, 253, true);
+    add_image_size('noticia-thumbnail_post', 848, 536, true);
+    add_image_size('noticia-slide_image', 555, 536, true);
+
+    add_image_size('noticia-video', 108, 104, true);
+    add_image_size('noticia-video_destaque', 457, 352, true);
+}
 
 function reporterdenoticias_paginacao_pagina_noticias() {
     global $wp_rewrite, $wp_query;
@@ -198,14 +202,17 @@ function corrigeCategoria($cat) {
     $categoria = "";
 
     switch ($cat) {
-        case 'politica':
-            $categoria = 'Política';
+        case 'bom-retiro-do-sul':
+            $categoria = 'Bom Retiro do Sul';
             break;
         case 'policia':
             $categoria = 'Polícia';
             break;
         case 'noticias':
             $categoria = 'Notícias';
+            break;
+        case 'videos':
+            $categoria = 'Vídeos';
             break;
     }
 

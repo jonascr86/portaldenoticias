@@ -1,5 +1,5 @@
 <?php
-$category = "politica";
+$category = "bom-retiro-do-sul";
 
 $params = [
     'posts_per_page' => 3,

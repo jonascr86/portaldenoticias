@@ -1,14 +1,14 @@
 <?php 
     $categoria = obterCategoria($post);
     $letra = obterPrimeiraLetra($categoria);
-    
+    //Arquivo utilizado nos destaques laterais
 ?>
 <article class="gradient-color02">
     <div class="article-inner">
         <div class="overlay"></div>
         <?php if (has_post_thumbnail()) : ?>
             <div class="img-wrapper noticia">
-                <?php the_post_thumbnail(); ?>
+                <?php the_post_thumbnail('noticia-thumbnail'); ?>
             </div>
         <?php else : ?>
             <div class="img-wrapper noticia">

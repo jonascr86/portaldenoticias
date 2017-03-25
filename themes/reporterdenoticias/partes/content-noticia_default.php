@@ -4,7 +4,7 @@
             <div class="overlay"></div>
             <?php if (has_post_thumbnail()) : ?>
                 <div class="img-wrapper noticia">
-                    <?php the_post_thumbnail(); ?>
+                    <?php the_post_thumbnail('noticia-thumbnail'); ?>
                 </div>
             <?php else : ?>
                 <div class="img-wrapper noticia">

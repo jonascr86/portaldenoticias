@@ -38,19 +38,31 @@ div.resumo-noticia>p{
 }
 
 img {
-    /*max-width:100%; Imagens dos vídeos pararma de aparecer*/
     width: auto;
     height: auto;
 }
 
-.media-left img{
-    /*max-width:100%; Imagens dos vídeos pararma de aparecer*/
-    width: 130px;
-    height: auto;
+.noticia>img {
+    width: auto;
+    height: 253px;
 }
 
-div.noticia>img {
-    max-height: 253px;
+.content-single>img {
+    width: 100%;
+    max-width: 450px;
+    max-height: 300px;
+}
+
+.propaganda-lateral>img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.media-left img{
+    width: 130px;
+    height: auto;
 }
 
 
