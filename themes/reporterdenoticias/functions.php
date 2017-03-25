@@ -83,7 +83,6 @@ function wpdocs_excerpt_more($more) {
 }
 
 add_filter('excerpt_more', 'wpdocs_excerpt_more');
-add_theme_support('menus');
 
 function reporterdenoticias_wp_query($params = null) {
 
@@ -103,15 +102,7 @@ function reporterdenoticias_wp_query($params = null) {
     return $wp_query;
 }
 
-add_action('init', 'portaldenoticias_init');
 
-function portaldenoticias_init() {
-    portaldenoticias_register_menu();
-}
-
-function portaldenoticias_register_menu() {
-    register_nav_menu('menu-principal', 'Menu Principal');
-}
 
 function mostraData() {
     setlocale(LC_ALL, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
@@ -229,15 +220,34 @@ function obtercategoriaUrl() {
     return corrigeCategoria($categoria);
 }
 
-function getMenu() {
-    return wp_nav_menu(
+add_theme_support('menus');
+add_action('init', 'portaldenoticias_init');
+
+function portaldenoticias_init() {
+    portaldenoticias_register_menu();
+}
+
+function portaldenoticias_register_menu() {
+    $locations = 
             [
-                'theme-location' => 'menu',
+                'menu-principal' => 'Menu Principal',
+                'rodape' => 'Menu Redapé'
+            ];
+    register_nav_menus($locations);
+}
+
+function getMenu($params = []) {
+    $param = [
+                'theme-location' => isset($params['theme-location']) ? $params['theme-location'] : 'menu-principal',
+                'menu' => isset($params['menu']) ? $params['menu'] : 'Menu Principal',
                 'container' => '',
                 'container_id' => '',
                 'container_class' => '',
-                'menu_class' => 'list-inline megamenu-parent',
+                'menu_class' => isset($params['menu_class']) ? $params['menu_class'] : 'list-inline megamenu-parent',
                 'walker' => new PortalDeNoticiasBootstrapNavWalker(),
-            ]
-    );
+            ];
+            
+    $menu = wp_nav_menu( $param );
+
+    return $menu;
 }

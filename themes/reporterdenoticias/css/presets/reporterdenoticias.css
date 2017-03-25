@@ -83,3 +83,7 @@ img {
     content: "\f054";
     margin-right:10px;
 }
+
+footer .footer-wrapper >.container {
+    background-color: #555;
+}
