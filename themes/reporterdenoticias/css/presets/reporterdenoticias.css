@@ -52,9 +52,11 @@ img {
     max-width: 450px;
 }
 
-.propaganda-lateral>img {
+.patrocinio-lateral>img {
     width: 100%;
     height: 100%;
+    max-height: 262px;
+    max-height: 235px;
 }
 
 
