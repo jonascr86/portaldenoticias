@@ -149,15 +149,15 @@ function video_destacado($destacado = false) {
 
     $width_video = isset($values['width_video']) ? esc_attr($values['width_video'][0]) : '';
     if (empty($width_video)) {
-        $width_video = 560;
+        $width_video = 848;
     }
     $height_video = isset($values['height_video']) ? esc_attr($values['height_video'][0]) : '';
     if (empty($height_video)) {
-        $height_video = 315;
+        $height_video = 500;
     }
 
     if (!empty($id_video)):
-        if($destacado !== FALSE){ $width_video = 560; $height_video = 315; }
+        if($destacado !== FALSE){ $width_video = 848; $height_video = 500; }
         $iframe = "<iframe width='" . $width_video . "' height='" . $height_video . "' src='http://www.youtube.com/embed/" . $id_video . "' frameborder='0' allowfullscreen></iframe>";
         echo $iframe;
     endif;
@@ -169,11 +169,11 @@ function get_video_destacado() {
 
     $width_video = isset($values['width_video']) ? esc_attr($values['width_video'][0]) : '';
     if (empty($width_video)) {
-        $width_video = 560;
+        $width_video = 848;
     }
     $height_video = isset($values['height_video']) ? esc_attr($values['height_video'][0]) : '';
     if (empty($height_video)) {
-        $height_video = 315;
+        $height_video = 500;
     }
 
     if (!empty($id_video)):

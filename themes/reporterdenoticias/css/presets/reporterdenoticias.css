@@ -93,3 +93,9 @@ footer .footer-wrapper >.container {
 .menu-rodape{
     margin-left: 60px;
 }
+
+/*Imagens colocadas pelo usuário no post */
+img.size-full{
+    width: 100%;
+    height: auto;
+}

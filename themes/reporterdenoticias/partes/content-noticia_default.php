@@ -2,14 +2,18 @@
     <article>
         <div class="article-inner">
             <div class="overlay"></div>
-            <?php if (has_post_thumbnail()) : ?>
+            <?php if(has_video_thumbnail()) : ?>
                 <div class="img-wrapper noticia">
-                    <?php the_post_thumbnail('noticia-thumbnail'); ?>
+                    <img src="<?php video_thumbnail();?>" alt="<?php the_title(); ?>">
                 </div>
-            <?php else : ?>
-                <div class="img-wrapper noticia">
-                    <img class="img-100p latest-post-image" src="<?php echo get_template_directory_uri(); ?>/img/article-img/thumbnail04.jpg" alt="img">
-                </div>
+                <?php elseif (has_post_thumbnail()) :  ?>
+                    <div class="img-wrapper noticia">
+                        <?php the_post_thumbnail('noticia-thumbnail'); ?>
+                    </div>    
+                    <?php else : ?>
+                        <div class="img-wrapper noticia">
+                            <img class="img-100p latest-post-image" src="<?php echo get_template_directory_uri(); ?>/img/article-img/thumbnail01.jpg" alt="img">
+                        </div>
             <?php endif; ?>
             <div class="article-info">
                 <h4 class="entry-title">

@@ -5,11 +5,11 @@
             <div class="overlay"></div>
             <?php if(has_video_thumbnail()) : ?>
                 <div class="img-wrapper noticia">
-                    <img src="<?php video_thumbnail();?>" alt="img">
+                    <img src="<?php video_thumbnail();?>" alt="<?php the_title(); ?>">
                 </div>
                 <?php elseif (has_post_thumbnail()) :  ?>
                     <div class="img-wrapper noticia">
-                        <?php the_post_thumbnail(); ?>
+                        <?php the_post_thumbnail('noticia-thumbnail'); ?>
                     </div>    
                     <?php else : ?>
                         <div class="img-wrapper noticia">
