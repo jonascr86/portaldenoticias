@@ -22,8 +22,6 @@
                     </div> <!-- //row -->
                 </div>
 
-                <!-- Sports Category -->
-                <!-- Trocar por bom retiro do sul -->
                 <?php get_template_part('partes/loop', 'bom_retiro_do_sul_principal'); ?>
                 
                 <?php get_template_part('partes/loop', 'regionais_principal'); ?>
