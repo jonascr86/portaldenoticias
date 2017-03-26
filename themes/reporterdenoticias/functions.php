@@ -46,6 +46,7 @@ function wpdocs_theme_setup() {
     add_image_size('noticia-thumbnail_post', 848, 536, true);
     add_image_size('noticia-slide_image', 555, 536, true);
     add_image_size('patrocinio-lateral', 262, 235, true);
+    add_image_size('patrocinio-topo', 262, 235, true);
 
     add_image_size('noticia-video', 108, 104, true);
     add_image_size('noticia-video_destaque', 457, 352, true);
