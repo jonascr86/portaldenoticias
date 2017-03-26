@@ -37,20 +37,18 @@
                 <div id="newedge-top-bar">
                     <div class="container">
                         <div class="row">
-                            <div id="logo" class="col-xs-4 col-sm-3 col-md-3 hidden-sm hidden-xs">
-                                <!--<a href="index.html"><img src="<?php // echo get_template_directory_uri(); ?>/img/logo.png" alt="logo"></a>-->
-                            </div> <!-- //logo -->
-                            <div class="col-sm-12 col-md-9">
+                            <div id="logo" class="col-xs-4 col-sm-3 col-md-3 hidden-sm hidden-xs"></div>
+                            <div class="col-sm-10 col-md-8">
                                 <div class="top-right">
                                     <div class="newedge-date">
                                         <span>	
-                                            <?php mostraData();  ?> 
+                                            <?php mostraData(); ?> 
                                         </span>
                                     </div> <!-- //date -->
 
                                     <?php // get_template_part('partes/language'); Esta parte pode ser adicionada posteriormente ?>
                                     <?php // get_template_part('partes/login'); Esta parte pode ser adicionada posteriormente ?>
-
+                                    
                                     <div class="newedge-search">
                                         <div class="search-icon-wrapper">
                                             <i class="fa fa-search"></i>
@@ -63,7 +61,8 @@
                                         </div> <!-- //search-wrapper -->
                                     </div> <!-- //search -->
                                 </div> <!-- //top-right -->
-                            </div> 
+                            </div>
+                            <?php get_template_part('partes/loop', 'patrocinio_topo'); ?>
                         </div> <!-- //row -->
                     </div> <!-- //container -->
                 </div> <!-- //top-bar -->
